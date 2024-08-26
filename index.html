@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Botão de download */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #00ffff;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff00ff;
+    transform: scale(1.1);
+}
+
+/* Estilos básicos */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00ffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff00ff;
+}
+
+section {
+    margin: 50px 0;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Galeria de Projetos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Barra de progresso das habilidades */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progress {
+    height: 20px;
+    background-color: #00ffff;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.5em;
+    color: #f1f1f1;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #00ffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.icon:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
+.icon:hover:before {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Seção de depoimentos */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Gabriel Augusto</h1>
+        <p>Desenvolvedor Web | Designer | Analista de Suporte | </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#resume">Currículo</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Olá, meu nome é Gabriel Augusto de Oliveira Carvalho e estou entusiasmado com meu recém-início na faculdade de ciência da computação pela Estácio. Estou ansioso para mergulhar nos desafios e oportunidades que esta jornada acadêmica certamente trará.
+        </p>
+        <p>Meus hobbies são explorar as últimas inovações no mundo da tecnologia é uma grande paixão minha. Estou sempre pesquisando e experimentando novas tecnologias.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="gallery">
+            <img src="1.JPG" alt="Projeto 1">
+            <img src="2.jpg" alt="Projeto 2">
+            <img src="3.jpg" alt="Projeto 3">
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <div class="skill">
+                <span class="skill-name">HTML</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">PHP</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Currículo</h2>
+        <p>Clique no botão abaixo para visualizar ou baixar meu currículo:</p>
+        <a href="Curriculo Gabriel.pdf" class="button" download>Baixar Currículo</a>
+    </section>
+
+   
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através das redes sociais:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/gabriel-augusto-de-oliveira-carvalho-0221922b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin">LinkedIn</a>
+            <a href="https://github.com/Gabriel-August0" target="_blank" class="icon github">GitHub</a>
+            <a href="https://www.instagram.com/gabriel_augusto_gb?igsh=eG85MG85ZnAyMnR4" target="_blank" class="icon instagram">Instagram</a>
+        </div>
+    </section>
+    <p>Meu primeiro projeto</p>
+
+    <footer>
+        <p>&copy; 2024 Gabriel Augusto. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
